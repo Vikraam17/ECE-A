@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    *{
+      background-color: chocolate;
+    }
+    .container{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .one,.two,.three{
+      display: inline-block;
+      border: 1px solid black;
+      height: 50px;
+      width: 250px;
+    }
+    .one{
+      background-color: red;
+    }
+    .two{
+      background-color: white;
+      display: flex;
+      justify-content: center;
+    }
+    .three{
+      background-color: green;
+    }
+    img{
+      height: 50px;
+    }
+    #navbar{
+      display: inline;
+      background-color: black;
+    }
+    
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    li{
+      list-style: none;
+      padding-right: 20px;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    ul,li,a{
+
+      background-color: cadetblue;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    a:hover{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="one"></div>
+    <div class="two"><img src="image.png" alt=""></div>
+    <div class="three"></div>
+  </div>
+</body>
+</html>
