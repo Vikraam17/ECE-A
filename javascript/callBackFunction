@@ -1,0 +1,9 @@
+function demoEg() {
+  console.log("Hello world");
+}
+
+function callFunction(demoFunction) {
+  demoFunction();
+}
+
+callFunction(demoEg);
