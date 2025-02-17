@@ -1,16 +1,22 @@
 import React from "react";
-import Name from "./components/Name";
+import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Pages/Home";
+import About from "./components/Pages/About";
+import Contact from "./components/Pages/Contact";
+import UseState from "./components/Hooks/UseState";
 const App = () => {
-  const userData = {
-    fname: "vikraam",
-    lname: "v",
-    phn: "9876543210",
-  };
   return (
     <div>
-      <Name {...userData} />
-      
-      <Name fname={userData.fname} lname={userData.lname} phn={userData.phn} />
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/About" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/useState" element={<UseState/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
