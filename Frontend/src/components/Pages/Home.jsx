@@ -1,11 +1,18 @@
-import React from 'react'
-
+import React from "react";
+import Name from '../Name'
 const Home = () => {
+  const userData = {
+    fname: "vikraam",
+    lname: "v",
+    phn: "9876543210",
+  };
   return (
     <div>
-      <h1>Home</h1>
+      <Name {...userData} />
+      
+      <Name fname={userData.fname} lname={userData.lname} phn={userData.phn} />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
