@@ -8,13 +8,13 @@ import UseState from "./components/Hooks/UseState";
 const App = () => {
   return (
     <div>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/About" element={<About />}></Route>
           <Route path="/contact" element={<Contact />} />
-          <Route path="/useState" element={<UseState/>}/>
+          <Route path="/useState" element={<UseState />} />
         </Routes>
       </BrowserRouter>
     </div>
